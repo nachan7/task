@@ -1,5 +1,5 @@
 * {
-  maragin: 0;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -24,7 +24,7 @@ main {
 }
 
 .box:last-child {
-  margin: 0;
+  margin-right: 0;
 }
 
 .box-img1 {
@@ -56,12 +56,35 @@ main {
   color: white;
 }
 
-.title {
-  margin: 15px o 5px;
+.box-title {
+  margin: 15px 0 5px;
 }
 
 
 footer {
   height: 50px;
   background-color: #AAAAAA;
+}
+
+@media screen and (max-width:768px){
+  header{
+    width: 100%;
+  }
+
+  main{
+    width: 100%;
+    display: block;
+    margin: 50px 0;
+  }
+
+  .box{
+    width: 90%;
+    margin: 20px auto;
+  }
+
+  .box:last-child{
+    margin: 20px auto;
+  }
+
+
 }
